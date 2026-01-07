@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Email Verification - Lightning Meal Plans">
+  <title>Email Verification - Lightning Meal Plans</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Lightning Meal Plans</h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="verification-container">
+      <div class="verification-card">
+        <!-- Loading State -->
+        <div id="loading" class="verification-state active">
+          <div class="verification-icon">⏳</div>
+          <h2 class="verification-title">Verifying Your Email</h2>
+          <p class="verification-message">
+            Please wait while we verify your email address...
+          </p>
+          <div class="spinner"></div>
+        </div>
+
+        <!-- Success State -->
+        <div id="success" class="verification-state">
+          <div class="verification-icon">✅</div>
+          <h2 class="verification-title">Email Verified!</h2>
+          <p class="verification-message">
+            Your email has been successfully verified. You can now return to the Lightning Meal Plans app and sign in to start planning your meals.
+          </p>
+          <div class="verification-actions">
+            <button onclick="returnToApp()" class="btn btn-primary btn-large">
+              Return to App
+            </button>
+          </div>
+        </div>
+
+        <!-- Error State -->
+        <div id="error" class="verification-state">
+          <div class="verification-icon">❌</div>
+          <h2 class="verification-title">Verification Failed</h2>
+          <p id="error-message" class="verification-message">
+            We couldn't verify your email address. Please try again or request a new verification email.
+          </p>
+          <div class="error-details" id="error-details" style="display: none;">
+            <strong>Error Details:</strong>
+            <p id="error-code"></p>
+          </div>
+          <div class="verification-actions">
+            <button onclick="returnToApp()" class="btn btn-primary btn-large">
+              Return to App
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+        </ul>
+      </nav>
+      <p class="footer-text">&copy; 2026 Lightning Meal Plans. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+  
+  <!-- Verification Logic -->
+  <script src="js/verify-email.js"></script>
+</body>
+</html>
