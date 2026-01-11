@@ -3,8 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Lightning Meal Plans - AI-powered meal planning app for dietary preferences, recipe customization, shopping lists, and weekly meal planning">
-  <title>Lightning Meal Plans - AI-Powered Meal Planning</title>
+  
+  <!-- SEO Meta Tags -->
+  <title>Lightning Meal Plans - AI Powered, Smart Shopping, & Recipe Import</title>
+  <meta name="description" content="Import recipes from any URL, generate smart aisle-sorted shopping lists, and plan weekly meals with AI. Supports Keto, Vegan, Gluten-Free & more.">
+  <meta name="keywords" content="meal planner, AI meal plan, grocery list app, import recipes, shopping list organizer, dietary restrictions, keto meal planner, vegan recipes, food allergy tracker">
+  <meta name="author" content="Lightning Meal Plans">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#4CAF50">
+  <link rel="canonical" href="https://lightningmealplans.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Lightning Meal Plans - AI Powered, Smart Shopping, & Recipe Import">
+  <meta property="og:description" content="Import recipes from any URL, generate smart aisle-sorted shopping lists, and plan weekly meals with AI.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lightningmealplans.com/">
+  <meta property="og:image" content="https://lightningmealplans.com/assets/LightningMealPlansLogo.png">
+  <meta property="og:site_name" content="Lightning Meal Plans">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Lightning Meal Plans - AI Powered Meal Planning">
+  <meta name="twitter:description" content="Plan meals, import recipes, and shop smarter with AI.">
+  <meta name="twitter:image" content="https://lightningmealplans.com/assets/LightningMealPlansLogo.png">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Lightning Meal Plans",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "iOS, Android",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "description": "AI-powered meal planning app that helps you import recipes, manage diets, and shop efficiently."
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "How does recipe import work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Simply paste a URL from your favorite recipe website, and our AI will extract the ingredients and instructions automatically."
+      }
+    }, {
+      "@type": "Question",
+      "name": "Is the shopping list smart?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! It automatically organizes your items by aisle (Produce, Dairy, etc.) and merges duplicate ingredients."
+      }
+    }, {
+      "@type": "Question",
+      "name": "Can I exclude ingredients I dislike?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. You can set permanent dislikes and allergies, and the app will warn you or filter suggestions accordingly."
+      }
+    }, {
+      "@type": "Question",
+      "name": "Can I customize diets?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we support Keto, Vegan, Vegetarian, Gluten-Free, and more custom dietary preferences."
+      }
+    }]
+  }
+  </script>
+
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -19,49 +94,107 @@
       <div class="container text-center">
         <h2 class="hero-title">Smart Meal Planning, Powered by AI</h2>
         <p class="hero-description">
-          Transform the way you plan meals with Lightning Meal Plans - your intelligent companion for personalized meal planning, 
-          recipe discovery, and effortless grocery shopping.
+          Transform the way you plan meals with Lightning Meal Plans - your intelligent companion for import recipes, 
+          personalized meal planning, and effortless grocery shopping.
         </p>
-        
-        <div class="features">
-          <div class="feature-grid">
-            <div class="feature-item">
-              <h3>🤖 AI-Powered Meal Planning</h3>
-              <p>Get intelligent meal suggestions tailored to your preferences and dietary needs</p>
-            </div>
-            
-            <div class="feature-item">
-              <h3>🥗 Dietary Preference Management</h3>
-              <p>Save and manage your dietary restrictions, allergies, and food preferences</p>
-            </div>
-            
-            <div class="feature-item">
-              <h3>👨‍🍳 Recipe Customization</h3>
-              <p>Customize recipes to match your taste and dietary requirements</p>
-            </div>
-            
-            <div class="feature-item">
-              <h3>🛒 Shopping List Generation</h3>
-              <p>Automatically generate organized shopping lists from your meal plans</p>
-            </div>
-            
-            <div class="feature-item">
-              <h3>📅 Weekly Meal Planning</h3>
-              <p>Plan your entire week's meals with ease and stay organized</p>
-            </div>
-            
-            <div class="feature-item">
-              <h3>⭐ Meal History with Ratings</h3>
-              <p>Track your meal history, add ratings and notes to remember your favorites</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="cta-section">
-          <a href="#download" class="btn btn-primary btn-large">Download Lightning Meal Plans (Coming Soon)</a>
-          <p class="cta-note">Available soon for iOS and Android</p>
+        <div class="cta-section mb-xl">
+            <a href="#download" class="btn btn-primary btn-large">Download Lightning Meal Plans (Coming Soon)</a>
+            <p class="cta-note">Available soon for iOS and Android</p>
         </div>
       </div>
+    </section>
+
+    <section id="features" class="section-padding">
+        <div class="container">
+            <h3 class="text-center mb-lg">Powerful Features</h3>
+            <div class="feature-grid">
+              <div class="feature-item">
+                <h3>🌐 Smart Recipe Import</h3>
+                <p>Import recipes from your favorite websites with a single click. Our AI parses ingredients and steps instantly.</p>
+              </div>
+              
+              <div class="feature-item">
+                <h3>🛒 Intelligent Shopping List</h3>
+                <p>Lists are automatically sorted by store aisle (Produce, Dairy, Frozen) so you can get in and out of the store fast.</p>
+              </div>
+              
+              <div class="feature-item">
+                <h3>🚫 Dietary Freedom</h3>
+                <p>Built-in support for Keto, Vegan, Gluten-Free, plus custom allergies and dislike lists that persist.</p>
+              </div>
+              
+              <div class="feature-item">
+                <h3>🤖 AI Meal Suggestions</h3>
+                <p>Stuck on what to cook? Get personalized suggestions based on your history and preferences.</p>
+              </div>
+              
+              <div class="feature-item">
+                <h3>⭐ History & Ratings</h3>
+                <p>Track what you've cooked, rate meals, and easily reuse family favorites from your history.</p>
+              </div>
+              
+              <div class="feature-item">
+                <h3>📏 Flexible Servings</h3>
+                <p>Adjust serving sizes to get suggestions that match your family needs.</p>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="section-padding mt-xl bg-alt">
+        <div class="container">
+            <h3 class="text-center mb-lg">How It Works</h3>
+            <div class="steps-grid">
+                <div class="step-item text-center">
+                    <div class="step-number">1</div>
+                    <h4>Plan</h4>
+                    <p>Import recipes from the web, ask AI for ideas, or pick from your history.</p>
+                </div>
+                <div class="step-item text-center">
+                    <div class="step-number">2</div>
+                    <h4>Customize</h4>
+                    <p>Adjust ingredients, serving sizes, and schedule meals for specific days.</p>
+                </div>
+                <div class="step-item text-center">
+                    <div class="step-number">3</div>
+                    <h4>Shop</h4>
+                    <p>Get an automatic, organized grocery list sorted by aisle.</p>
+                </div>
+                <div class="step-item text-center">
+                    <div class="step-number">4</div>
+                    <h4>Cook & Rate</h4>
+                    <p>Follow easy instructions, then rate the meal to improve future suggestions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="section-padding mt-xl">
+        <div class="container container-narrow">
+            <h3 class="text-center mb-lg">Frequently Asked Questions</h3>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h4>How does recipe import work?</h4>
+                    <p>Simply paste a URL from your favorite recipe website. Our AI analyzes the page and extracts the ingredients, quantities, and cooking instructions for you.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Is the shopping list smart?</h4>
+                    <p>Yes! It doesn't just list items; it organizes them by department (Produce, Meat, Dairy, etc.) and combines duplicates so you know exactly what to buy.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I exclude ingredients I dislike?</h4>
+                    <p>Absolutely. You can set permanent dislikes and allergies in your profile. The AI will avoid suggesting meals with these ingredients.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Is the app free?</h4>
+                    <p>Lightning Meal Plans will be free to download with optional premium features for advanced automation and unlimited imports.</p>
+                </div>
+            </div>
+            
+            <!-- <div class="cta-section text-center mt-xl">
+              <a href="#download" class="btn btn-primary btn-large">Get Notified When We Launch</a>
+            </div> -->
+        </div>
     </section>
   </main>
 

@@ -801,6 +801,103 @@ label {
   }
 }
 
+/* ===================================
+   New Sections Styling (Features, How It Works, FAQ)
+   =================================== */
+
+.section-padding {
+  padding: var(--spacing-3xl) 0;
+}
+
+.bg-alt {
+  background-color: var(--color-background-alt);
+}
+
+/* Steps Grid (How It Works) */
+.steps-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xl);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.step-item {
+  position: relative;
+  padding: var(--spacing-lg);
+}
+
+.step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 50%;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-md);
+  box-shadow: 0 4px 6px rgba(76, 175, 80, 0.3);
+}
+
+.step-item h4 {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text);
+}
+
+.step-item p {
+  color: var(--color-text-light);
+}
+
+/* FAQ Styling */
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.faq-item {
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+  transition: all var(--transition-base);
+}
+
+.faq-item:hover {
+  border-color: var(--color-primary-light);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.faq-item h4 {
+  font-size: var(--font-size-lg);
+  color: var(--color-text);
+  margin-bottom: var(--spacing-sm);
+}
+
+.faq-item p {
+  margin-bottom: 0;
+  color: var(--color-text-light);
+}
+
+/* Responsive for new grids */
+@media (min-width: 768px) {
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .steps-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 @media (min-width: 768px) {
   .verification-actions {
     flex-direction: row;
