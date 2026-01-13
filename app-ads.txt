@@ -1,0 +1,7 @@
+# app-ads.txt for Lightning Meal Plans
+# This file authorizes Google AdMob to sell advertising inventory for this app
+# Domain: lightningmealplans.com
+# Last Updated: January 12, 2026
+
+# Google AdMob
+google.com, pub-6485511369454301, DIRECT, f08c47fec0942fa0
