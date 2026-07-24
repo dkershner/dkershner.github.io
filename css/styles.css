@@ -46,22 +46,34 @@ ol {
    =================================== */
 
 :root {
-  /* Color Scheme - Matching Lightning Meal Plans App */
-  --color-primary: #4CAF50;
-  --color-primary-dark: #388E3C;
-  --color-primary-light: #81C784;
-  --color-secondary: #6c757d;
+  /* Color Scheme - Matching Lightning Meal Plans App (Cozy & Warm Palette) */
+  /* Primary Colors - Terracotta (60% Base) */
+  --color-primary: #C66B4C;
+  --color-primary-dark: #A85539;
+  --color-primary-light: #D88A6F;
+  
+  /* Accent Colors - Deep Navy (30% Headers & Navigation) */
+  --color-accent: #2A3D4D;
+  --color-accent-light: #3D5A6F;
+  --color-accent-dark: #1A2A36;
+  
+  /* Secondary for legacy compatibility */
+  --color-secondary: #2A3D4D;
+  
+  /* Semantic Colors */
   --color-success: #4CAF50;
-  --color-danger: #dc3545;
+  --color-danger: #D32F2F;
   --color-warning: #FF9800;
   --color-info: #2196F3;
 
   /* Neutral Colors */
-  --color-text: rgba(0, 0, 0, 0.87);
-  --color-text-light: rgba(0, 0, 0, 0.6);
+  --color-text: #212121;
+  --color-text-light: #757575;
+  --color-text-tertiary: #9E9E9E;
   --color-background: #ffffff;
-  --color-background-alt: #f5f5f5;
-  --color-border: #e0e0e0;
+  --color-background-alt: #F4F6F7;
+  --color-surface-variant: #FDFBF7;
+  --color-border: #E0E0E0;
 
   /* Spacing Variables */
   --spacing-xs: 0.25rem;
@@ -213,8 +225,8 @@ main {
 
 footer {
   padding: var(--spacing-2xl) 0;
-  background-color: #2E7D32;
-  /* Dark Green */
+  background-color: var(--color-accent);
+  /* Deep Navy */
   color: white;
   margin-top: 0;
 }
@@ -316,7 +328,7 @@ select:focus {
   outline: none;
   border-color: var(--color-primary);
   border-width: 2px;
-  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+  box-shadow: 0 0 0 3px rgba(198, 107, 76, 0.1);
   padding: calc(var(--spacing-md) - 1px);
   /* Adjust for thicker border */
 }
@@ -511,7 +523,7 @@ label {
 
 .hero {
   padding: var(--spacing-3xl) 0;
-  background: linear-gradient(135deg, #f1f8e9 0%, #ffffff 100%);
+  background: linear-gradient(135deg, var(--color-surface-variant) 0%, var(--color-background) 100%);
 }
 
 .hero-title {
@@ -644,19 +656,19 @@ label {
 }
 
 .alert-error {
-  background-color: #ffebee;
+  background-color: #FFEBEE;
   color: var(--color-danger);
   border-color: var(--color-danger);
 }
 
 .alert-success {
-  background-color: #e8f5e9;
+  background-color: #E8F5E9;
   color: var(--color-success);
   border-color: var(--color-success);
 }
 
 .alert-info {
-  background-color: #e3f2fd;
+  background-color: #E3F2FD;
   color: var(--color-info);
   border-color: var(--color-info);
 }
@@ -670,19 +682,19 @@ label {
 }
 
 #status-message.error {
-  background-color: #ffebee;
+  background-color: #FFEBEE;
   color: var(--color-danger);
   border: 1px solid var(--color-danger);
 }
 
 #status-message.success {
-  background-color: #e8f5e9;
+  background-color: #E8F5E9;
   color: var(--color-success);
   border: 1px solid var(--color-success);
 }
 
 #status-message.info {
-  background-color: #e3f2fd;
+  background-color: #E3F2FD;
   color: var(--color-info);
   border: 1px solid var(--color-info);
 }
@@ -922,7 +934,7 @@ label {
   font-size: var(--font-size-2xl);
   font-weight: var(--font-weight-bold);
   margin-bottom: var(--spacing-lg);
-  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4);
+  box-shadow: 0 4px 12px rgba(198, 107, 76, 0.4);
   transition: transform var(--transition-base);
 }
 
@@ -1007,9 +1019,9 @@ label {
    =================================== */
 
 .highlight-box {
-  background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%);
+  background: linear-gradient(135deg, #FCE8E2 0%, var(--color-surface-variant) 100%);
   border-left: 4px solid var(--color-primary);
-  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.15);
+  box-shadow: 0 2px 8px rgba(198, 107, 76, 0.15);
 }
 
 .highlight-box h3 {
@@ -1055,7 +1067,7 @@ label {
 }
 
 .note {
-  background-color: #fff3cd;
+  background-color: #FFF3CD;
   border-left: 4px solid var(--color-warning);
   padding: var(--spacing-md);
   margin-top: var(--spacing-lg);
