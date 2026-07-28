@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Main pages -->
+  <url>
+       <loc>https://lightningmealplans.com/</loc>
+       <lastmod>2026-07-28T14:40:01+00:00</lastmod>
+       <changefreq>weekly</changefreq>
+       <priority>1.0</priority>
+  </url>
+  
+  <!-- Support & Info -->
+  <url>
+       <loc>https://lightningmealplans.com/support.html</loc>
+       <lastmod>2026-07-28T14:40:01+00:00</lastmod>
+       <changefreq>monthly</changefreq>
+       <priority>0.6</priority>
+  </url>
+  <url>
+       <loc>https://lightningmealplans.com/privacy.html</loc>
+       <lastmod>2026-07-27T14:40:01+00:00</lastmod>
+       <changefreq>monthly</changefreq>
+       <priority>0.4</priority>
+  </url>
+  <url>
+       <loc>https://lightningmealplans.com/terms.html</loc>
+       <lastmod>2026-07-27T14:40:01+00:00</lastmod>
+       <changefreq>monthly</changefreq>
+       <priority>0.4</priority>
+  </url>
+  <url>
+       <loc>https://lightningmealplans.com/delete-account.html</loc>
+       <lastmod>2026-01-12T14:40:01+00:00</lastmod>
+       <changefreq>yearly</changefreq>
+       <priority>0.3</priority>
+  </url>
+
+  <!-- Blog -->
+  <url>
+       <loc>https://lightningmealplans.com/blog/</loc>
+       <lastmod>2026-07-28T14:40:01+00:00</lastmod>
+       <changefreq>weekly</changefreq>
+       <priority>0.8</priority>
+  </url>
+  <url>
+       <loc>https://lightningmealplans.com/blog/how-ai-meal-planning-saves-time-and-money.html</loc>
+       <lastmod>2026-01-28T00:00:00+00:00</lastmod>
+       <changefreq>monthly</changefreq>
+       <priority>0.7</priority>
+  </url>
+  <url>
+       <loc>https://lightningmealplans.com/blog/how-to-import-recipes-from-any-website.html</loc>
+       <lastmod>2026-07-28T14:40:01+00:00</lastmod>
+       <changefreq>monthly</changefreq>
+       <priority>0.7</priority>
+  </url>
+  <url>
+       <loc>https://lightningmealplans.com/blog/5-tips-for-smart-grocery-list-organization.html</loc>
+       <lastmod>2026-07-28T14:40:01+00:00</lastmod>
+       <changefreq>monthly</changefreq>
+       <priority>0.7</priority>
+  </url>
+
+</urlset>
