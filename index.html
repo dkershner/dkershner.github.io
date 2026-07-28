@@ -5,17 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- SEO Meta Tags -->
-  <title>AI Meal Planner App - Recipe Import & Smart Grocery Lists | Free Trial</title>
-  <meta name="description" content="AI-powered meal planner app with free trial. Import meals from URLs, generate automatic grocery lists by department, save past meals, and manage custom diets and allergies. Subscribe for unlimited access.">
-  <meta name="keywords" content="AI meal planner, import meals from URLs, automatic grocery list by department, meal planning based on user preferences, allergy meal planner, save past meals, rate meals, serving size calculator, meal planning subscription">
+  <title>Lightning Meal Plans - AI Meal Planner & Smart Grocery Lists</title>
+  <meta name="description" content="AI-powered meal planner app for iOS & Android. Import recipes from URLs, generate automatic grocery lists by department, save past meals, and manage custom diets and allergies. Free to try.">
+  <meta name="keywords" content="AI meal planner, import meals from URLs, automatic grocery list by department, meal planning app, allergy meal planner, save past meals, rate meals, serving size calculator">
   <meta name="author" content="Lightning Meal Plans">
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#4CAF50">
+  <meta name="theme-color" content="#C66B4C">
   <link rel="canonical" href="https://lightningmealplans.com/">
 
+  <!-- Google Fonts Non-Blocking Loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
   <!-- Open Graph -->
-  <meta property="og:title" content="AI Meal Planner App - Recipe Import & Smart Grocery Lists">
-  <meta property="og:description" content="AI-powered meal planner with free trial. Import meals from URLs, generate automatic grocery lists by department, and save past meals. Subscribe for unlimited access.">
+  <meta property="og:title" content="Lightning Meal Plans - AI Meal Planner & Smart Grocery Lists">
+  <meta property="og:description" content="Transform how you plan meals. Import recipes from URLs, generate automatic grocery lists by department, and enjoy stress-free cooking.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://lightningmealplans.com/">
   <meta property="og:image" content="https://lightningmealplans.com/assets/LightningMealPlansLogo.png">
@@ -23,8 +28,8 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="AI Meal Planner App - Recipe Import & Smart Grocery Lists">
-  <meta name="twitter:description" content="AI-powered meal planner with free trial. Import meals from URLs and generate automatic grocery lists. Subscribe for unlimited access.">
+  <meta name="twitter:title" content="Lightning Meal Plans - AI Meal Planner & Smart Grocery Lists">
+  <meta name="twitter:description" content="Import recipes from any URL and generate automatic department-organized shopping lists.">
   <meta name="twitter:image" content="https://lightningmealplans.com/assets/LightningMealPlansLogo.png">
 
   <!-- Structured Data -->
@@ -39,205 +44,408 @@
       "@type": "Offer",
       "price": "0",
       "priceCurrency": "USD",
-      "description": "Free to use with subscription required for unlimited access."
+      "description": "Free to download with subscription required for unlimited access."
     },
-    "description": "An AI-powered meal planning app that helps you import meals from URLs, generate automatic grocery lists by department, manage custom diets and allergies, and rate your past recipes. Free to use with subscription for unlimited access."
-  }
-  </script>
-  
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "How does recipe import work?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Simply paste a URL from your favorite recipe website, and our AI will extract the ingredients and instructions automatically."
-      }
-    }, {
-      "@type": "Question",
-      "name": "Is the shopping list smart?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes! It automatically organizes your items by aisle (Produce, Dairy, etc.) and merges duplicate ingredients."
-      }
-    }, {
-      "@type": "Question",
-      "name": "Can I exclude ingredients I dislike?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Absolutely. You can set permanent dislikes and allergies, and the app will warn you or filter suggestions accordingly."
-      }
-    }, {
-      "@type": "Question",
-      "name": "Can I customize diets?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, we support Keto, Vegan, Vegetarian, Gluten-Free, and more custom dietary preferences."
-      }
-    }]
+    "description": "An AI-powered meal planning app that helps you import meals from URLs, generate automatic grocery lists by department, manage custom diets and allergies, and rate your past recipes."
   }
   </script>
 
+  <link rel="icon" type="image/png" href="assets/LightningMealPlansLogo.png">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Lightning Meal Plans</h1>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/LightningMealPlansLogo.png" alt="Lightning Meal Plans Logo">
+        <span>Lightning Meal Plans</span>
+      </a>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle Navigation" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="blog/index.html">Blog</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="https://apps.apple.com/us/app/lightningmealplans-ai-planner/id6790597906" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          Get App
+        </a>
+      </div>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="container text-center">
-        <h2 class="hero-title">AI Meal Planner & Smart Grocery Lists</h2>
-        <p class="hero-description">
-          Transform the way you plan meals with Lightning Meal Plans - an AI-powered app for importing recipes from URLs, creating automatic grocery lists by department, and effortless personalized meal planning. Free to use with subscription for unlimited access.
-        </p>
-        <div class="cta-section mb-xl">
-            <a href="https://play.google.com/store/apps/details?id=com.lightningmealplans" target="_blank" rel="noopener noreferrer">
-              <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" 
-                   alt="Get it on Google Play" 
-                   style="height: 80px; margin: 0 auto; display: block;">
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <span class="badge">✨ AI-Powered & Real Recipe Scraping</span>
+          <h1 class="hero-title">
+            Smart Meal Prep <span>Made Effortless</span>
+          </h1>
+          <p class="hero-description">
+            Import recipes from any website, get AI meal suggestions based on real recipes, and generate automatic grocery lists organized by department. Free to try.
+          </p>
+
+          <div class="store-badges">
+            <a href="https://play.google.com/store/apps/details?id=com.lightningmealplans" target="_blank" rel="noopener noreferrer" class="store-badge-link badge-play-store">
+              <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
             </a>
-            <a href="https://apps.apple.com/us/app/lightningmealplans-ai-planner/id6790597906" target="_blank" rel="noopener noreferrer" style="margin-top: 16px; display: inline-block;">
-              <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1234567890" 
-                   alt="Download on the App Store" 
-                   style="height: 60px; margin: 0 auto; display: block;">
+            <a href="https://apps.apple.com/us/app/lightningmealplans-ai-planner/id6790597906" target="_blank" rel="noopener noreferrer" class="store-badge-link badge-app-store">
+              <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on App Store">
             </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="phone-mockup-frame">
+            <div class="phone-notch"></div>
+            
+            <div class="floating-pill floating-pill-1">
+              <span>🤖 Real Recipe AI</span>
+            </div>
+            <div class="floating-pill floating-pill-2">
+              <span>🛒 Departmental Lists</span>
+            </div>
+
+            <div class="phone-screen">
+              <img src="assets/LightningMealPlansLogo_splash.png" alt="Lightning Meal Plans Mobile App Showcase">
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="features" class="section-padding">
-        <div class="container">
-            <h3 class="text-center mb-lg">Everything You Need for Stress-Free Meal Planning</h3>
-            <div class="feature-grid">
-              <div class="feature-item">
-                <h3>🤖 AI-Powered Meal Suggestions</h3>
-                <p>Get automatic meal planning matched to your preferences using <strong>real, tested recipes from the web</strong>. Unlike other apps that let AI invent weird ingredient combinations, our AI only suggests legitimate, tried-and-true recipes you can cook with absolute confidence.</p>
-              </div>
-              
-              <div class="feature-item">
-                <h3>🌐 Import Meals from URLs</h3>
-                <p>Found a recipe you love online? Import it instantly from any website or URL. We'll extract the ingredients and directions automatically.</p>
-              </div>
-              
-              <div class="feature-item">
-                <h3>🛒 Automatic Grocery List</h3>
-                <p>Save time at the store with smart shopping lists that are automatically organized by department (Produce, Dairy, Meat, etc.) and merge duplicate items.</p>
-              </div>
-              
-              <div class="feature-item">
-                <h3>🚫 Total Dietary Control</h3>
-                <p>Easily set your desired serving size, diet type, and any food allergies. Your restrictions are strictly followed for every meal suggestion.</p>
-              </div>
-              
-              <div class="feature-item">
-                <h3>⭐ Save & Rate Past Meals</h3>
-                <p>Keep a detailed history of your cooking. Save past meals, rate them, and seamlessly add them to your upcoming meal plan.</p>
-              </div>
-              
-              <div class="feature-item">
-                <h3>� Free to Use</h3>
-                <p>Start using Lightning Meal Plans right away at no cost. Subscribe for unlimited meal planning, recipe imports, and AI suggestions to get the most out of your cooking.</p>
-              </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="how-it-works" class="section-padding mt-xl bg-alt">
-        <div class="container">
-            <h3 class="text-center mb-lg">How It Works</h3>
-            <div class="steps-grid">
-                <div class="step-item text-center">
-                    <div class="step-number">1</div>
-                    <h4>Plan</h4>
-                    <p>Import recipes from the web, ask AI for ideas, or pick from your history.</p>
-                </div>
-                <div class="step-item text-center">
-                    <div class="step-number">2</div>
-                    <h4>Customize</h4>
-                    <p>Adjust ingredients, serving sizes, and schedule meals for specific days.</p>
-                </div>
-                <div class="step-item text-center">
-                    <div class="step-number">3</div>
-                    <h4>Shop</h4>
-                    <p>Get an automatic, organized grocery list sorted by aisle.</p>
-                </div>
-                <div class="step-item text-center">
-                    <div class="step-number">4</div>
-                    <h4>Cook & Rate</h4>
-                    <p>Follow easy instructions, then rate the meal to improve future suggestions.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="faq" class="section-padding mt-xl">
-        <div class="container container-narrow">
-            <h3 class="text-center mb-lg">Frequently Asked Questions</h3>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <h4>How does recipe import work?</h4>
-                    <p>Simply paste a URL from your favorite recipe website. Our AI analyzes the page and extracts the ingredients, quantities, and cooking instructions for you.</p>
-                </div>
-                <div class="faq-item">
-                    <h4>Is the shopping list smart?</h4>
-                    <p>Yes! It doesn't just list items; it organizes them by department (Produce, Meat, Dairy, etc.) and combines duplicates so you know exactly what to buy.</p>
-                </div>
-                <div class="faq-item">
-                    <h4>Can I exclude ingredients I dislike?</h4>
-                    <p>Absolutely. You can set permanent dislikes and allergies in your profile. The AI will avoid suggesting meals with these ingredients.</p>
-                </div>
-                <div class="faq-item">
-                    <h4>How much does Lightning Meal Plans cost?</h4>
-                    <p>Lightning Meal Plans is free to download and use. A subscription is required for unlimited access to all features including AI meal planning, recipe imports, and smart shopping lists. Try it free and subscribe when you're ready for unlimited meal planning.</p>
-                </div>
-                <div class="faq-item">
-                    <h4>What's included in the subscription?</h4>
-                    <p>With a subscription, you get unlimited AI-powered meal suggestions, unlimited recipe imports from any website, automatic smart grocery lists organized by department, dietary preference management, meal history tracking with ratings, and serving size customization. Everything you need for effortless meal planning.</p>
-                </div>
-                <div class="faq-item">
-                    <h4>Do the AI meal suggestions use real recipes?</h4>
-                    <p>Yes! A major difference between Lightning Meal Plans and other AI apps is that our AI searches the web for <strong>real, tried-and-true recipes</strong>. It never "hallucinates" or invents untested meals, meaning you always get legitimate recipes that you can cook with confidence.</p>
-                </div>
-                <div class="faq-item">
-                    <h4>What platforms are supported?</h4>
-                    <p>Lightning Meal Plans is available for both iOS and Android devices. Download it from the App Store or Google Play.</p>
-                </div>
-            </div>
-            
-            <div class="cta-section text-center mt-xl">
-              <a href="https://play.google.com/store/apps/details?id=com.lightningmealplans" target="_blank" rel="noopener noreferrer">
-                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" 
-                     alt="Get it on Google Play" 
-                     style="height: 80px;">
-              </a>
-              <a href="https://apps.apple.com/us/app/lightningmealplans-ai-planner/id6790597906" target="_blank" rel="noopener noreferrer" style="margin-left: 16px;">
-                <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1234567890" 
-                     alt="Download on the App Store" 
-                     style="height: 60px;">
-              </a>
-            </div>
-        </div>
-    </section>
-  </main>
-
-  <footer>
+  <!-- Features Section -->
+  <section id="features" class="section-padding" style="background-color: var(--color-background);">
     <div class="container">
-      <nav>
-        <ul>
-          <li><a href="support.html">Support</a></li>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-          <li><a href="terms.html">Terms of Use</a></li>
-        </ul>
-      </nav>
-      <p class="footer-text">&copy; 2026 Lightning Meal Plans. All rights reserved.</p>
+      <div class="section-header">
+        <span class="badge">Everything You Need</span>
+        <h2 class="section-title">Stress-Free Meal Planning</h2>
+        <p class="section-subtitle">
+          Designed to eliminate decision fatigue, prevent food waste, and cut hours off your weekly prep routine.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">🤖</div>
+          <h3>AI-Powered Meal Suggestions</h3>
+          <p>Get meal plans tailored to your preferences using <strong>real, tested web recipes</strong>. Unlike apps that generate bizarre AI combinations, our system only matches legitimate recipes you can cook with confidence.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">🌐</div>
+          <h3>1-Click URL Recipe Import</h3>
+          <p>Found a recipe on a blog or cooking site? Paste the link into the app to instantly extract ingredients, measurements, and step-by-step instructions into your personal planner.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">🛒</div>
+          <h3>Departmental Smart Grocery List</h3>
+          <p>Save time at the store with shopping lists that are automatically organized by supermarket aisle (Produce, Dairy, Meat, Pantry) and automatically merge duplicate items.</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">🚫</div>
+          <h3>Total Dietary & Allergy Control</h3>
+          <p>Easily set dietary rules (Keto, Vegan, Vegetarian, Gluten-Free) and list specific food dislikes or allergies. The app strictly enforces your preferences across all suggestions.</p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">⭐</div>
+          <h3>Save & Rate Past Meals</h3>
+          <p>Keep a detailed history of your cooking. Save past recipes, give them ratings, and seamlessly re-add your family favorites to upcoming meal plans with one tap.</p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">📊</div>
+          <h3>Serving Size Calculator</h3>
+          <p>Cooking for 2 or scaling up for a dinner party of 8? Adjust serving sizes instantly, and all ingredient quantities across your weekly plan recalculate automatically.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="section-padding how-it-works-bg">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Simple 4-Step Process</span>
+        <h2 class="section-title">How Lightning Meal Plans Works</h2>
+        <p class="section-subtitle">
+          From recipe discovery to your dining room table in four simple steps.
+        </p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <h4>Plan</h4>
+          <p>Import web recipes, request AI recommendations, or pick from your saved favorites.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <h4>Customize</h4>
+          <p>Adjust serving sizes, tweak ingredient options, and assign meals to specific days.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <h4>Shop</h4>
+          <p>Get a combined, smart shopping list automatically organized by supermarket department.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">4</div>
+          <h4>Cook & Rate</h4>
+          <p>Follow step-by-step instructions, then rate your meal to refine future recommendations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Preview Section -->
+  <section class="section-padding" style="background-color: var(--color-background);">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Guides & Articles</span>
+        <h2 class="section-title">Latest Meal Prep Insights</h2>
+        <p class="section-subtitle">
+          Explore expert tips on saving time, cutting food waste, and building better eating habits.
+        </p>
+      </div>
+
+      <div class="blog-grid">
+        <!-- Post 1 Card -->
+        <article class="blog-card">
+          <div class="article-cover-graphic cover-ai-prep">
+            <span class="cover-icon">⚡</span>
+          </div>
+          <div class="blog-card-body">
+            <span class="badge" style="width: fit-content;">AI & Prep</span>
+            <h3 class="blog-card-title">
+              <a href="blog/how-ai-meal-planning-saves-time-and-money.html">How AI Meal Planning Saves You 5 Hours & $150 a Month</a>
+            </h3>
+            <p class="blog-card-excerpt">
+              Discover how automated recipe matching and smart ingredient consolidation eliminate food waste.
+            </p>
+            <div class="blog-card-footer">
+              <span>5 min read</span>
+              <a href="blog/how-ai-meal-planning-saves-time-and-money.html" style="font-weight: 600;">Read More →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Post 2 Card -->
+        <article class="blog-card">
+          <div class="article-cover-graphic cover-recipe-import">
+            <span class="cover-icon">🌐</span>
+          </div>
+          <div class="blog-card-body">
+            <span class="badge" style="width: fit-content;">Recipe Import</span>
+            <h3 class="blog-card-title">
+              <a href="blog/how-to-import-recipes-from-any-website.html">Import Any Recipe with One Click: Stop Copy-Pasting Ingredients</a>
+            </h3>
+            <p class="blog-card-excerpt">
+              Learn how our instant URL extractor parses ingredients and steps in seconds from any site.
+            </p>
+            <div class="blog-card-footer">
+              <span>4 min read</span>
+              <a href="blog/how-to-import-recipes-from-any-website.html" style="font-weight: 600;">Read More →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Post 3 Card -->
+        <article class="blog-card">
+          <div class="article-cover-graphic cover-grocery-tips">
+            <span class="cover-icon">🛒</span>
+          </div>
+          <div class="blog-card-body">
+            <span class="badge" style="width: fit-content;">Grocery Tips</span>
+            <h3 class="blog-card-title">
+              <a href="blog/5-tips-for-smart-grocery-list-organization.html">5 Tips for Supermarket Efficiency: Organized Grocery Lists by Department</a>
+            </h3>
+            <p class="blog-card-excerpt">
+              Stop crisscrossing aisles at the store with department categorization and ingredient merging.
+            </p>
+            <div class="blog-card-footer">
+              <span>4 min read</span>
+              <a href="blog/5-tips-for-smart-grocery-list-organization.html" style="font-weight: 600;">Read More →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="blog/index.html" class="btn btn-outline">View All Blog Posts & Guides →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="section-padding" style="background-color: var(--color-surface);">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Questions & Answers</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">
+          Have questions about Lightning Meal Plans? We have answers.
+        </p>
+      </div>
+
+      <div class="faq-container">
+        <div class="faq-accordion-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How does recipe import work?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            Simply paste a URL from your favorite recipe website. Our AI analyzes the page and extracts the ingredients, quantities, and cooking instructions for you automatically into your personal library.
+          </div>
+        </div>
+
+        <div class="faq-accordion-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Is the shopping list smart?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            Yes! It doesn't just list items; it organizes them by supermarket department (Produce, Meat, Dairy, Pantry, etc.) and automatically combines duplicate items so you buy exact quantities.
+          </div>
+        </div>
+
+        <div class="faq-accordion-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Can I exclude ingredients I dislike or have allergies to?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            Absolutely. You can set permanent dislikes and allergies in your profile. The AI will strictly avoid suggesting meals containing those ingredients.
+          </div>
+        </div>
+
+        <div class="faq-accordion-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How much does Lightning Meal Plans cost?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            Lightning Meal Plans is free to download and explore. A subscription unlocks unlimited AI meal planning suggestions, unlimited recipe imports, and full smart shopping list capabilities.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download CTA Banner -->
+  <section class="section-padding" style="background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%); color: #FFFFFF; text-align: center;">
+    <div class="container container-narrow">
+      <span class="badge" style="background: rgba(255, 255, 255, 0.15); color: #FFFFFF; border-color: rgba(255, 255, 255, 0.25);">Get Started Today</span>
+      <h2 style="font-family: var(--font-heading); font-size: 2.5rem; font-weight: 800; color: #FFFFFF; margin: 1rem 0;">
+        Ready to Simplify Your Weekly Meals?
+      </h2>
+      <p style="font-size: 1.15rem; color: rgba(255, 255, 255, 0.8); margin-bottom: 2.5rem;">
+        Download Lightning Meal Plans now on iOS and Android to start importing recipes and automating your grocery lists.
+      </p>
+
+      <div class="store-badges" style="justify-content: center;">
+        <a href="https://play.google.com/store/apps/details?id=com.lightningmealplans" target="_blank" rel="noopener noreferrer" class="store-badge-link badge-play-store">
+          <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
+        </a>
+        <a href="https://apps.apple.com/us/app/lightningmealplans-ai-planner/id6790597906" target="_blank" rel="noopener noreferrer" class="store-badge-link badge-app-store">
+          <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on App Store">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" style="color: #FFFFFF;">
+            <img src="assets/LightningMealPlansLogo.png" alt="Lightning Meal Plans Logo">
+            <span>Lightning Meal Plans</span>
+          </a>
+          <p>
+            AI-powered recipe import, personalized meal planning, and automated smart grocery lists organized by department.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="blog/index.html">Blog & Guides</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Support & Legal</h4>
+          <ul class="footer-links">
+            <li><a href="support.html">Contact Support</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="delete-account.html">Delete Account</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Get the App</h4>
+          <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: 0.5rem;">
+            <a href="https://play.google.com/store/apps/details?id=com.lightningmealplans" target="_blank" rel="noopener noreferrer" class="store-badge-link badge-play-store">
+              <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Google Play">
+            </a>
+            <a href="https://apps.apple.com/us/app/lightningmealplans-ai-planner/id6790597906" target="_blank" rel="noopener noreferrer" class="store-badge-link badge-app-store">
+              <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="App Store">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Lightning Meal Plans. All rights reserved.</p>
+        <p>Built with ❤️ for stress-free home cooking.</p>
+      </div>
     </div>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

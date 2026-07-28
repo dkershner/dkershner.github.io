@@ -5,166 +5,128 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Lightning Meal Plans Account Deletion - Learn how to delete your account and what data is removed">
   <title>Delete Your Account - Lightning Meal Plans</title>
+
+  <!-- Google Fonts Non-Blocking Loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="assets/LightningMealPlansLogo.png">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Lightning Meal Plans</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-          <li><a href="terms.html">Terms of Use</a></li>
-        </ul>
-      </nav>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/LightningMealPlansLogo.png" alt="Lightning Meal Plans Logo">
+        <span>Lightning Meal Plans</span>
+      </a>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle Navigation" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#features">Features</a></li>
+        <li><a href="index.html#how-it-works">How It Works</a></li>
+        <li><a href="blog/index.html">Blog</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="https://apps.apple.com/us/app/lightningmealplans-ai-planner/id6790597906" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          Get App
+        </a>
+      </div>
     </div>
   </header>
 
-  <main>
-    <div class="container container-narrow">
-      <h2>Delete Your Account</h2>
-      <p><em>Last updated: January 12, 2026</em></p>
+  <section class="hero-section" style="padding: 3.5rem 0 2.5rem 0;">
+    <div class="container text-center">
+      <span class="badge" style="background: rgba(211, 47, 47, 0.1); color: var(--color-danger); border-color: rgba(211, 47, 47, 0.2);">Account Management</span>
+      <h1 class="hero-title" style="font-size: 2.75rem; margin: 0.75rem 0;">
+        Delete Your <span>Account</span>
+      </h1>
+      <p class="hero-description" style="max-width: 600px; margin: 0 auto;">
+        Learn how to permanently remove your Lightning Meal Plans account and associated personal data.
+      </p>
+    </div>
+  </section>
 
-      <section class="card">
-        <h3>Account Deletion for Lightning Meal Plans</h3>
+  <main class="section-padding" style="background-color: var(--color-background);">
+    <div class="container container-narrow">
+      
+      <div class="content-card">
+        <h2>Account Deletion Overview</h2>
+        <p><em>Last updated: January 12, 2026</em></p>
         <p>
           We understand that you may want to delete your Lightning Meal Plans account. This page explains how to request 
           account deletion and what happens to your data when you do.
         </p>
-      </section>
+      </div>
 
-      <section class="card highlight-box">
-        <h3>How to Delete Your Account</h3>
-        <p>
-          To request deletion of your Lightning Meal Plans account, follow these simple steps:
-        </p>
-        <ol class="steps-list">
-          <li>
-            <strong>Open the Lightning Meal Plans app</strong> on your mobile device
-          </li>
-          <li>
-            <strong>Navigate to the Profile tab</strong> (located in the bottom navigation bar)
-          </li>
-          <li>
-            <strong>Scroll down and select "Delete Account"</strong>
-          </li>
-          <li>
-            <strong>Confirm your decision</strong> when prompted
-          </li>
+      <div class="content-card" style="border-top: 4px solid var(--color-primary);">
+        <h2>How to Delete Your Account In-App</h2>
+        <p>To delete your Lightning Meal Plans account directly from your mobile device:</p>
+        
+        <ol class="ordered-steps">
+          <li><strong>Open the Lightning Meal Plans app</strong> on your mobile device</li>
+          <li><strong>Navigate to the Profile tab</strong> (located in the bottom navigation bar)</li>
+          <li><strong>Scroll down and select "Delete Account"</strong></li>
+          <li><strong>Confirm your decision</strong> when prompted</li>
         </ol>
-        <p class="note">
-          <strong>Note:</strong> Account deletion is permanent and cannot be undone. Please make sure you want to proceed 
-          before confirming.
-        </p>
-      </section>
 
-      <section class="card">
-        <h3>What Data Gets Deleted</h3>
+        <div style="padding: 1rem 1.25rem; background: var(--color-surface-variant); border-left: 4px solid var(--color-warning); border-radius: var(--radius-sm); margin-top: 1.5rem;">
+          <p style="margin-bottom: 0; font-size: 0.95rem; color: var(--color-accent); font-weight: 600;">
+            ⚠️ Account deletion is permanent and cannot be undone. Please make sure you want to proceed.
+          </p>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h2>Alternative: Email Deletion Request</h2>
         <p>
-          When you delete your Lightning Meal Plans account, <strong>all of your user data is permanently deleted</strong>. 
-          This includes:
+          If you are unable to access the app, you can submit a manual account deletion request by emailing our team:
         </p>
+        <p style="margin-top: 1rem;">
+          <strong>Email:</strong> <a href="mailto:support@lightningmealplans.com">support@lightningmealplans.com</a><br>
+          <strong>Subject line:</strong> Account Deletion Request
+        </p>
+        <p style="font-size: 0.9rem; color: var(--color-text-subtle);">
+          Please send the email from the email address associated with your Lightning Meal Plans account so we can verify ownership.
+        </p>
+      </div>
+
+      <div class="content-card">
+        <h2>Data Retention & Deletion Details</h2>
+        <p>When your account is deleted, the following data is permanently erased within 30 days:</p>
         <ul>
-          <li><strong>Account Information:</strong> Your email address, password, and account settings</li>
-          <li><strong>Dietary Preferences:</strong> All saved dietary restrictions, allergies, and food preferences</li>
-          <li><strong>Meal Plans:</strong> Your weekly meal plans and scheduled meals</li>
-          <li><strong>Recipe History:</strong> All saved recipes, customizations, and imported meals</li>
-          <li><strong>Ratings and Notes:</strong> Your meal ratings, comments, and feedback</li>
-          <li><strong>Shopping Lists:</strong> All generated shopping lists and checked items</li>
-          <li><strong>Usage Data:</strong> Your app usage patterns and preferences</li>
+          <li>Your user account profile (email address, display name, preferences)</li>
+          <li>All custom recipes, imported recipes, and meal plans</li>
+          <li>Your saved grocery lists and meal history ratings</li>
         </ul>
-      </section>
+      </div>
 
-      <section class="card">
-        <h3>Data Retention Period</h3>
-        <p>
-          <strong>All user data is deleted immediately upon account deletion.</strong> There is no retention period for personal data.
-        </p>
-        <p>
-          The only exception is:
-        </p>
-        <ul>
-          <li>
-            <strong>Anonymized Analytics:</strong> Some aggregated, anonymized usage statistics may be retained for app improvement 
-            purposes. This data cannot be linked back to you or your account.
-          </li>
-          <li>
-            <strong>Legal Requirements:</strong> In rare cases, we may be required by law to retain certain information for 
-            regulatory or legal purposes. If applicable, this data is kept secure and deleted as soon as legally permissible.
-          </li>
-        </ul>
-      </section>
-
-      <section class="card">
-        <h3>What Happens After Deletion</h3>
-        <p>
-          Once you delete your account:
-        </p>
-        <ul>
-          <li>You will be immediately logged out of the app</li>
-          <li>You will no longer be able to access your meal plans or recipes</li>
-          <li>All your data will be permanently removed from our servers</li>
-          <li>You will not receive any further communications from Lightning Meal Plans</li>
-          <li>If you had a premium subscription, it will be canceled (refunds subject to app store policies)</li>
-        </ul>
-      </section>
-
-      <section class="card">
-        <h3>Creating a New Account</h3>
-        <p>
-          If you delete your account and later decide to use Lightning Meal Plans again, you can create a new account at any time. 
-          However, your previous data will not be recoverable.
-        </p>
-      </section>
-
-      <section class="card">
-        <h3>Need Help?</h3>
-        <p>
-          If you're having trouble deleting your account or have questions about the deletion process, please contact us:
-        </p>
-        <ul>
-          <li>Through the Lightning Meal Plans app support feature</li>
-          <li>By email at: <a href="mailto:support@lightningmealplans.com">support@lightningmealplans.com</a></li>
-          <li>By visiting our website at <a href="https://lightningmealplans.com">lightningmealplans.com</a></li>
-        </ul>
-        <p>
-          We typically respond to account deletion requests within 24-48 hours.
-        </p>
-      </section>
-
-      <section class="card">
-        <h3>Your Privacy Rights</h3>
-        <p>
-          Account deletion is part of your data privacy rights under Lightning Meal Plans' <a href="privacy.html">Privacy Policy</a>. 
-          You have the right to:
-        </p>
-        <ul>
-          <li>Access your personal data</li>
-          <li>Correct inaccurate information</li>
-          <li>Export your data</li>
-          <li>Delete your account and data</li>
-          <li>Opt-out of certain data collection</li>
-        </ul>
-        <p>
-          For more information about how we handle your data, please review our <a href="privacy.html">Privacy Policy</a>.
-        </p>
-      </section>
     </div>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <div class="container">
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="support.html">Support</a></li>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-          <li><a href="terms.html">Terms of Use</a></li>
-        </ul>
-      </nav>
-      <p class="footer-text">&copy; 2026 Lightning Meal Plans. All rights reserved.</p>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Lightning Meal Plans. All rights reserved.</p>
+        <p><a href="index.html">Back to Main Website</a></p>
+      </div>
     </div>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

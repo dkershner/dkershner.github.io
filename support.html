@@ -4,130 +4,321 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <!-- SEO Meta Tags -->
-  <title>Support - Lightning Meal Plans</title>
+  <title>Support - Lightning Meal Plans | Help Center & FAQs</title>
   <meta name="description" content="Get help with Lightning Meal Plans. Contact support, view FAQs, and find answers to common questions about meal planning, recipe imports, and shopping lists.">
-  <meta name="keywords" content="Lightning Meal Plans support, meal planner help, contact support, FAQ">
+  <meta name="keywords" content="Lightning Meal Plans support, meal planner help, contact support, FAQ, recipe import help">
   <meta name="author" content="Lightning Meal Plans">
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#4CAF50">
-  <link rel="canonical" href="https://lightningmealplans.com/support">
+  <meta name="theme-color" content="#C66B4C">
+  <link rel="canonical" href="https://lightningmealplans.com/support.html">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Support - Lightning Meal Plans">
-  <meta property="og:description" content="Get help with Lightning Meal Plans. Contact our support team for assistance.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://lightningmealplans.com/support">
-  <meta property="og:site_name" content="Lightning Meal Plans">
+  <!-- Google Fonts Non-Blocking Loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
 
+  <link rel="icon" type="image/png" href="assets/LightningMealPlansLogo.png">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1><a href="index.html" style="color: inherit; text-decoration: none;">Lightning Meal Plans</a></h1>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/LightningMealPlansLogo.png" alt="Lightning Meal Plans Logo">
+        <span>Lightning Meal Plans</span>
+      </a>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle Navigation" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#features">Features</a></li>
+        <li><a href="index.html#how-it-works">How It Works</a></li>
+        <li><a href="blog/index.html">Blog</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a href="support.html" class="active">Support</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="https://apps.apple.com/us/app/lightningmealplans-ai-planner/id6790597906" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          Get App
+        </a>
+      </div>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="container text-center">
-        <h2 class="hero-title">Support</h2>
-        <p class="hero-description">
-          We're here to help you get the most out of Lightning Meal Plans.
+  <!-- Hero Section -->
+  <section class="hero-section" style="padding: 4rem 0 3rem 0;">
+    <div class="container text-center">
+      <span class="badge">💬 Help Center & Assistance</span>
+      <h1 class="hero-title" style="font-size: 3rem; margin: 0.75rem 0;">
+        How Can We <span>Help You?</span>
+      </h1>
+      <p class="hero-description" style="max-width: 640px; margin: 0 auto;">
+        We're here to help you get the most out of Lightning Meal Plans. Explore our help topics, search common FAQs, or reach out directly to our team.
+      </p>
+    </div>
+  </section>
+
+  <!-- Support Hub Section -->
+  <main class="section-padding" style="background-color: var(--color-background);">
+    <div class="container">
+      
+      <!-- Contact Cards Grid -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 4rem;">
+        
+        <!-- Direct Email Card -->
+        <div class="content-card" style="border-top: 4px solid var(--color-primary); display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 0;">
+          <div>
+            <div class="feature-icon-wrapper" style="margin-bottom: 1rem;">✉️</div>
+            <h2>Email Support</h2>
+            <p>Need assistance or found an issue with a specific recipe URL? Our support team is ready to assist you.</p>
+            <div style="margin: 1.25rem 0; padding: 1rem 1.25rem; background: var(--color-primary-soft); border-radius: var(--radius-md);">
+              <span style="font-size: 0.85rem; font-weight: 600; color: var(--color-primary-dark); display: block; margin-bottom: 0.25rem;">SUPPORT EMAIL</span>
+              <a href="mailto:support@lightningmealplans.com" style="font-size: 1.15rem; font-weight: 800; color: var(--color-primary-dark); text-decoration: underline;">
+                support@lightningmealplans.com
+              </a>
+            </div>
+          </div>
+          <p style="font-size: 0.88rem; color: var(--color-text-subtle); margin-bottom: 0;">
+            ⚡ We typically respond within 24–48 hours on business days.
+          </p>
+        </div>
+
+        <!-- Account & App Help Card -->
+        <div class="content-card" style="border-top: 4px solid var(--color-accent); display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 0;">
+          <div>
+            <div class="feature-icon-wrapper" style="background: rgba(42, 61, 77, 0.08); color: var(--color-accent); margin-bottom: 1rem;">📱</div>
+            <h2>Quick Account Actions</h2>
+            <p>Manage your subscription settings, update dietary preferences, or request account data removal.</p>
+            
+            <ul style="list-style: none; margin-left: 0; margin-top: 1rem;">
+              <li style="margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
+                <span>🔒</span> <a href="delete-account.html" style="font-weight: 600;">Account Deletion Instructions →</a>
+              </li>
+              <li style="margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
+                <span>🛡️</span> <a href="privacy.html" style="font-weight: 600;">Privacy Policy & Data Security →</a>
+              </li>
+              <li style="margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
+                <span>⚖️</span> <a href="terms.html" style="font-weight: 600;">Terms of Service →</a>
+              </li>
+            </ul>
+          </div>
+          <p style="font-size: 0.88rem; color: var(--color-text-subtle); margin-bottom: 0;">
+            Managed securely via Google Play Store & Apple App Store.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- FAQ Section -->
+      <div class="section-header">
+        <span class="badge">Knowledge Base</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">
+          Find fast answers to common questions about recipe importing, shopping lists, and subscriptions.
         </p>
       </div>
-    </section>
 
-    <section class="section-padding">
-      <div class="container container-narrow">
-        <div class="card mb-xl">
-          <h3>Contact Support</h3>
-          <p>Need help or have a question? Our support team is ready to assist you.</p>
-          <p class="mt-md"><strong>Email:</strong> <a href="mailto:support@lightningmealplans.com">support@lightningmealplans.com</a></p>
-          <p class="mt-sm" style="color: #666;">We typically respond within 24-48 hours on business days.</p>
-        </div>
-
-        <h3 class="mb-lg">Frequently Asked Questions</h3>
-        
-        <div class="faq-list">
-          <div class="faq-item">
-            <h4>How do I import a recipe from a website?</h4>
-            <p>In the app, tap the "Import Recipe" button and paste the URL from any recipe website. Our AI will automatically extract the ingredients and instructions. If you encounter issues with a specific site, please contact support with the URL.</p>
-          </div>
-
-          <div class="faq-item">
-            <h4>How do I set my dietary preferences?</h4>
-            <p>Go to your Profile or Settings in the app, then select "Dietary Preferences." You can choose from Keto, Vegan, Vegetarian, Gluten-Free, and more. You can also add specific allergies and dislikes.</p>
-          </div>
-
-          <div class="faq-item">
-            <h4>How does the shopping list work?</h4>
-            <p>When you add meals to your plan, ingredients are automatically added to your shopping list. The list is organized by department (Produce, Dairy, Meat, etc.) and duplicate items are merged with combined quantities.</p>
-          </div>
-
-          <div class="faq-item">
-            <h4>Can I adjust serving sizes?</h4>
-            <p>Yes! When viewing a meal, you can adjust the number of servings. All ingredient quantities will automatically scale to match your selection.</p>
-          </div>
-
-          <div class="faq-item">
-            <h4>How do AI meal suggestions work?</h4>
-            <p>Our AI searches for real, tested recipes from the web based on your dietary preferences, past ratings, and restrictions. Unlike other apps, we only suggest legitimate recipes that have been published online, never invented combinations.</p>
-          </div>
-
-          <div class="faq-item">
-            <h4>How do I manage my subscription?</h4>
-            <p>Subscriptions are managed through your app store account (Google Play or Apple App Store). To cancel or modify your subscription, open your device's app store, go to your account settings, and select "Subscriptions."</p>
-          </div>
-
-          <div class="faq-item">
-            <h4>What's included in the free version?</h4>
-            <p>You can download and use Lightning Meal Plans for free to explore the features. A subscription unlocks unlimited AI meal suggestions, unlimited recipe imports, and full access to smart shopping lists and meal planning tools.</p>
-          </div>
-
-          <div class="faq-item">
-            <h4>I'm having technical issues. What should I do?</h4>
-            <p>First, try closing and reopening the app. If the issue persists, make sure you have the latest version installed. If problems continue, email us at <a href="mailto:support@lightningmealplans.com">support@lightningmealplans.com</a> with details about the issue and your device model.</p>
-          </div>
-
-          <div class="faq-item">
-            <h4>How do I delete my account?</h4>
-            <p>To delete your account and all associated data, please visit our <a href="delete-account.html">account deletion page</a> or contact us at <a href="mailto:support@lightningmealplans.com">support@lightningmealplans.com</a> with your request.</p>
-          </div>
-
-          <div class="faq-item">
-            <h4>Is my data private and secure?</h4>
-            <p>Yes. We take your privacy seriously. Your meal plans, recipes, and personal information are stored securely and never shared with third parties. For full details, see our <a href="privacy.html">Privacy Policy</a>.</p>
-          </div>
-
-          <div class="faq-item">
-            <h4>What recipe websites are supported for import?</h4>
-            <p>Our AI can import from most popular recipe websites. If you find a site that doesn't work, please send us the URL at <a href="mailto:support@lightningmealplans.com">support@lightningmealplans.com</a> and we'll work to add support for it.</p>
+      <div class="faq-container">
+        <!-- Question 1 -->
+        <div class="faq-accordion-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How do I import a recipe from a website?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            In the app, tap the "Import Recipe" button and paste the URL from any recipe website. Our AI will automatically extract the ingredients, quantities, and cooking instructions. If you encounter issues with a specific site, email support with the recipe URL and our engineers will investigate.
           </div>
         </div>
 
-        <div class="card mt-xl text-center">
-          <h3>Still Need Help?</h3>
-          <p class="mb-md">Can't find the answer you're looking for? We're here to help.</p>
-          <a href="mailto:support@lightningmealplans.com" class="btn btn-primary">Email Support</a>
+        <!-- Question 2 -->
+        <div class="faq-accordion-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How do I set my dietary preferences and allergies?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            Go to your Profile or Settings tab in the app, then select "Dietary Preferences." You can select standard diets (Keto, Vegan, Vegetarian, Gluten-Free) and list specific food dislikes or allergies. The app strictly filters future AI recommendations based on your preferences.
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="faq-accordion-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How does the smart grocery list work?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            When you add meals to your weekly calendar, ingredients are automatically added to your shopping list. The list is organized by supermarket department (Produce, Dairy, Meat, Pantry) and matching ingredients across multiple recipes are automatically merged with combined total quantities.
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="faq-accordion-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Can I adjust serving sizes?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            Yes! When viewing any meal or recipe, tap the serving size calculator to adjust the number of servings up or down. All ingredient measurements will scale automatically before being added to your grocery list.
+          </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="faq-accordion-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How do AI meal suggestions work?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            Our AI searches real, tested recipes from trusted food websites based on your dietary rules, past meal ratings, and disliked ingredients. Unlike other tools that generate weird AI ingredient combinations, we only recommend tried-and-true published recipes.
+          </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="faq-accordion-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How do I manage or cancel my subscription?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            Subscriptions are managed through your mobile device app store account (Google Play Store on Android or Apple App Store on iOS). Open your device app store, tap your account profile icon, select "Subscriptions," and choose Lightning Meal Plans to modify or cancel.
+          </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="faq-accordion-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>What's included in the free version vs. subscription?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            You can download Lightning Meal Plans for free to explore features and test meal planning. A subscription unlocks unlimited AI meal suggestions, unlimited web recipe imports, and full access to smart shopping lists and meal prep tools.
+          </div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="faq-accordion-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>I'm having technical issues. What should I do?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            First, try closing and re-opening the app or checking for updates in your device app store. If the issue persists, send an email to <a href="mailto:support@lightningmealplans.com">support@lightningmealplans.com</a> with details about your device model, OS version, and a brief description of the issue.
+          </div>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="faq-accordion-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How do I delete my account and data?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            To delete your account, open the app, go to Profile → Delete Account, and confirm. Alternatively, visit our <a href="delete-account.html">Account Deletion Page</a> or email support with your registered account email.
+          </div>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="faq-accordion-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Is my data private and secure?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            Yes. We encrypt user data in transit and at rest and never sell your personal information or meal history to third parties. Read our complete <a href="privacy.html">Privacy Policy</a> for details.
+          </div>
         </div>
       </div>
-    </section>
+
+    </div>
   </main>
 
-  <footer>
+  <!-- Site Footer -->
+  <footer class="site-footer">
     <div class="container">
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="support.html">Support</a></li>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-          <li><a href="terms.html">Terms of Use</a></li>
-        </ul>
-      </nav>
-      <p class="footer-text">&copy; 2026 Lightning Meal Plans. All rights reserved.</p>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" style="color: #FFFFFF;">
+            <img src="assets/LightningMealPlansLogo.png" alt="Lightning Meal Plans Logo">
+            <span>Lightning Meal Plans</span>
+          </a>
+          <p>
+            AI-powered recipe import, personalized meal planning, and automated smart grocery lists organized by department.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="index.html#how-it-works">How It Works</a></li>
+            <li><a href="blog/index.html">Blog & Guides</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+            <li><a href="support.html">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Support & Legal</h4>
+          <ul class="footer-links">
+            <li><a href="support.html">Contact Support</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="delete-account.html">Delete Account</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Get the App</h4>
+          <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: 0.5rem;">
+            <a href="https://play.google.com/store/apps/details?id=com.lightningmealplans" target="_blank" rel="noopener noreferrer" class="store-badge-link badge-play-store">
+              <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Google Play">
+            </a>
+            <a href="https://apps.apple.com/us/app/lightningmealplans-ai-planner/id6790597906" target="_blank" rel="noopener noreferrer" class="store-badge-link badge-app-store">
+              <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="App Store">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Lightning Meal Plans. All rights reserved.</p>
+        <p>Built with ❤️ for stress-free home cooking.</p>
+      </div>
     </div>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

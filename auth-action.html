@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Lightning Meal Plans - Authentication Action Handler">
   <title>Lightning Meal Plans - Processing...</title>
+
+  <link rel="icon" type="image/png" href="assets/LightningMealPlansLogo.png">
   <link rel="stylesheet" href="css/styles.css">
   <style>
     .loading-container {
@@ -15,41 +17,35 @@
       min-height: 60vh;
       padding: 2rem;
     }
-    .spinner {
-      width: 50px;
-      height: 50px;
-      border: 4px solid rgba(0, 0, 0, 0.1);
-      border-left-color: var(--color-primary, #007bff);
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-    }
-    @keyframes spin {
-      to { transform: rotate(360deg); }
-    }
-    .loading-text {
-      margin-top: 1.5rem;
-      color: var(--color-text-light, #666);
-      font-size: 1.1rem;
-    }
   </style>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Lightning Meal Plans</h1>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/LightningMealPlansLogo.png" alt="Lightning Meal Plans Logo">
+        <span>Lightning Meal Plans</span>
+      </a>
     </div>
   </header>
 
   <main>
     <div class="loading-container">
       <div class="spinner"></div>
-      <p class="loading-text">Processing your request...</p>
+      <p class="loading-text" style="margin-top: 1.5rem; color: var(--color-text-muted); font-size: 1.1rem; font-family: var(--font-heading);">
+        Processing your request...
+      </p>
     </div>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <div class="container">
-      <p class="footer-text">&copy; 2026 Lightning Meal Plans. All rights reserved.</p>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Lightning Meal Plans. All rights reserved.</p>
+        <p><a href="index.html">Back to Main Website</a></p>
+      </div>
     </div>
   </footer>
 
@@ -59,24 +55,19 @@
      * Routes to the appropriate page based on the 'mode' parameter
      */
     (function() {
-      // Get URL parameters
       const urlParams = new URLSearchParams(window.location.search);
       const mode = urlParams.get('mode');
       const oobCode = urlParams.get('oobCode');
       const apiKey = urlParams.get('apiKey');
       
-      // Validate that we have the required parameters
       if (!mode || !oobCode || !apiKey) {
-        // Invalid link - redirect to home with error
         console.error('Missing required parameters for auth action');
         window.location.href = 'index.html';
         return;
       }
       
-      // Build the query string to pass along
       const queryString = window.location.search;
       
-      // Route based on mode
       switch (mode) {
         case 'resetPassword':
           window.location.href = 'reset-password.html' + queryString;
@@ -85,11 +76,9 @@
           window.location.href = 'verify-email.html' + queryString;
           break;
         case 'recoverEmail':
-          // If you add email recovery in the future
           window.location.href = 'recover-email.html' + queryString;
           break;
         default:
-          // Unknown mode - redirect to home
           console.error('Unknown auth action mode:', mode);
           window.location.href = 'index.html';
       }

@@ -5,21 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Email Verification - Lightning Meal Plans">
   <title>Email Verification - Lightning Meal Plans</title>
+
+  <link rel="icon" type="image/png" href="assets/LightningMealPlansLogo.png">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Lightning Meal Plans</h1>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/LightningMealPlansLogo.png" alt="Lightning Meal Plans Logo">
+        <span>Lightning Meal Plans</span>
+      </a>
     </div>
   </header>
 
-  <main>
-    <div class="verification-container">
-      <div class="verification-card">
+  <main class="section-padding" style="background-color: var(--color-background); min-height: 70vh;">
+    <div class="container container-narrow" style="max-width: 580px;">
+      <div class="content-card text-center" style="border-top: 4px solid var(--color-primary);">
+        
         <!-- Loading State -->
         <div id="loading" class="verification-state active">
-          <div class="verification-icon">⏳</div>
+          <div style="font-size: 3.5rem; margin-bottom: 1rem;">⏳</div>
           <h2 class="verification-title">Verifying Your Email</h2>
           <p class="verification-message">
             Please wait while we verify your email address...
@@ -29,13 +37,13 @@
 
         <!-- Success State -->
         <div id="success" class="verification-state">
-          <div class="verification-icon">✅</div>
+          <div style="font-size: 3.5rem; margin-bottom: 1rem;">✅</div>
           <h2 class="verification-title">Email Verified!</h2>
           <p class="verification-message">
             Your email has been successfully verified. You can now return to the Lightning Meal Plans app and sign in to start planning your meals.
           </p>
-          <div class="verification-actions">
-            <button onclick="returnToApp()" class="btn btn-primary btn-large">
+          <div class="verification-actions" style="margin-top: 1.5rem;">
+            <button onclick="returnToApp()" class="btn btn-primary" style="padding: 0.85rem 2rem;">
               Return to App
             </button>
           </div>
@@ -43,35 +51,32 @@
 
         <!-- Error State -->
         <div id="error" class="verification-state">
-          <div class="verification-icon">❌</div>
+          <div style="font-size: 3.5rem; margin-bottom: 1rem;">❌</div>
           <h2 class="verification-title">Verification Failed</h2>
           <p id="error-message" class="verification-message">
             We couldn't verify your email address. Please try again or request a new verification email.
           </p>
-          <div class="error-details" id="error-details" style="display: none;">
+          <div class="error-details" id="error-details" style="display: none; margin: 1rem 0; padding: 0.75rem; background: var(--color-surface-variant); border-radius: var(--radius-sm);">
             <strong>Error Details:</strong>
-            <p id="error-code"></p>
+            <p id="error-code" style="margin-bottom: 0;"></p>
           </div>
-          <div class="verification-actions">
-            <button onclick="returnToApp()" class="btn btn-primary btn-large">
+          <div class="verification-actions" style="margin-top: 1.5rem;">
+            <button onclick="returnToApp()" class="btn btn-primary" style="padding: 0.85rem 2rem;">
               Return to App
             </button>
           </div>
         </div>
+
       </div>
     </div>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <div class="container">
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-          <li><a href="terms.html">Terms of Use</a></li>
-        </ul>
-      </nav>
-      <p class="footer-text">&copy; 2026 Lightning Meal Plans. All rights reserved.</p>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Lightning Meal Plans. All rights reserved.</p>
+        <p><a href="index.html">Back to Main Website</a></p>
+      </div>
     </div>
   </footer>
 
