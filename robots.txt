@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://lightningmealplans.com/sitemap.xml
+
+# Disallow authentication action pages (not useful for SEO)
+Disallow: /auth-action.html
+Disallow: /reset-password.html
+Disallow: /verify-email.html

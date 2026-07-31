@@ -60,5 +60,23 @@
        <changefreq>monthly</changefreq>
        <priority>0.7</priority>
   </url>
+  <url>
+       <loc>https://lightningmealplans.com/blog/best-meal-prep-apps-compared.html</loc>
+       <lastmod>2026-07-28T14:40:01+00:00</lastmod>
+       <changefreq>monthly</changefreq>
+       <priority>0.7</priority>
+  </url>
+  <url>
+       <loc>https://lightningmealplans.com/blog/weeknight-dinner-ideas-for-busy-families.html</loc>
+       <lastmod>2026-07-28T14:40:01+00:00</lastmod>
+       <changefreq>monthly</changefreq>
+       <priority>0.7</priority>
+  </url>
+  <url>
+       <loc>https://lightningmealplans.com/blog/how-to-reduce-food-waste-at-home.html</loc>
+       <lastmod>2026-07-28T14:40:01+00:00</lastmod>
+       <changefreq>monthly</changefreq>
+       <priority>0.7</priority>
+  </url>
 
 </urlset>

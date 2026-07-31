@@ -50,6 +50,48 @@
   }
   </script>
 
+  <!-- FAQ Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How does recipe import work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Simply paste a URL from your favorite recipe website. Our AI analyzes the page and extracts the ingredients, quantities, and cooking instructions for you automatically into your personal library."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the shopping list smart?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! It doesn't just list items; it organizes them by supermarket department (Produce, Meat, Dairy, Pantry, etc.) and automatically combines duplicate items so you buy exact quantities."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I exclude ingredients I dislike or have allergies to?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. You can set permanent dislikes and allergies in your profile. The AI will strictly avoid suggesting meals containing those ingredients."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does Lightning Meal Plans cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Lightning Meal Plans is free to download and explore. A subscription unlocks unlimited AI meal planning suggestions, unlimited recipe imports, and full smart shopping list capabilities."
+        }
+      }
+    ]
+  }
+  </script>
+
   <link rel="icon" type="image/png" href="assets/LightningMealPlansLogo.png">
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -261,20 +303,20 @@
 
         <!-- Post 2 Card -->
         <article class="blog-card">
-          <div class="article-cover-graphic cover-recipe-import">
-            <span class="cover-icon">🌐</span>
+          <div class="article-cover-graphic" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+            <span class="cover-icon">🍽️</span>
           </div>
           <div class="blog-card-body">
-            <span class="badge" style="width: fit-content;">Recipe Import</span>
+            <span class="badge" style="width: fit-content;">Meal Ideas</span>
             <h3 class="blog-card-title">
-              <a href="blog/how-to-import-recipes-from-any-website.html">Import Any Recipe with One Click: Stop Copy-Pasting Ingredients</a>
+              <a href="blog/weeknight-dinner-ideas-for-busy-families.html">Quick Weeknight Dinner Ideas for Busy Families</a>
             </h3>
             <p class="blog-card-excerpt">
-              Learn how our instant URL extractor parses ingredients and steps in seconds from any site.
+              Discover 10 stress-free weeknight dinner strategies that save time and reduce takeout spending.
             </p>
             <div class="blog-card-footer">
-              <span>4 min read</span>
-              <a href="blog/how-to-import-recipes-from-any-website.html" style="font-weight: 600;">Read More →</a>
+              <span>6 min read</span>
+              <a href="blog/weeknight-dinner-ideas-for-busy-families.html" style="font-weight: 600;">Read More →</a>
             </div>
           </div>
         </article>
