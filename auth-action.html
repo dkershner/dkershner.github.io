@@ -24,7 +24,7 @@
   <!-- Site Header -->
   <header class="site-header">
     <div class="container nav-container">
-      <a href="index.html" class="brand-logo">
+      <a href="/" class="brand-logo">
         <img src="assets/LightningMealPlansLogo.png" alt="Lightning Meal Plans Logo">
         <span>Lightning Meal Plans</span>
       </a>
@@ -44,7 +44,7 @@
     <div class="container">
       <div class="footer-bottom">
         <p>&copy; 2026 Lightning Meal Plans. All rights reserved.</p>
-        <p><a href="index.html">Back to Main Website</a></p>
+        <p><a href="/">Back to Main Website</a></p>
       </div>
     </div>
   </footer>
@@ -62,7 +62,7 @@
       
       if (!mode || !oobCode || !apiKey) {
         console.error('Missing required parameters for auth action');
-        window.location.href = 'index.html';
+        window.location.href = '/';
         return;
       }
       
@@ -70,17 +70,17 @@
       
       switch (mode) {
         case 'resetPassword':
-          window.location.href = 'reset-password.html' + queryString;
+          window.location.href = '/reset-password' + queryString;
           break;
         case 'verifyEmail':
-          window.location.href = 'verify-email.html' + queryString;
+          window.location.href = '/verify-email' + queryString;
           break;
         case 'recoverEmail':
-          window.location.href = 'recover-email.html' + queryString;
+          window.location.href = '/recover-email' + queryString;
           break;
         default:
           console.error('Unknown auth action mode:', mode);
-          window.location.href = 'index.html';
+          window.location.href = '/';
       }
     })();
   </script>
