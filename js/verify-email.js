@@ -128,12 +128,16 @@ async function initializeEmailVerification() {
  */
 function returnToApp() {
   // Try to open the app using deep link
-  window.location.href = 'lightningmealplans://verify-email-complete';
+  const deepLink = 'lightningmealplans://app/verify-email-complete';
+  window.location.href = deepLink;
   
-  // Fallback: show instructions after a delay
+  // Fallback: show instructions after a delay if app doesn't open
   setTimeout(() => {
-    alert('If the app did not open automatically, please return to the Lightning Meal Plans app and sign in.');
-  }, 1000);
+    // Check if user is still on the page (app didn't open)
+    if (document.visibilityState === 'visible') {
+      alert('If the app did not open automatically, please return to the Lightning Meal Plans app and sign in.');
+    }
+  }, 2000);
 }
 
 // Initialize when DOM is ready
