@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#C66B4C">
+  <title>Get Lightning Meal Plans</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/LightningMealPlansLogo.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function () {
+      var userAgent = navigator.userAgent || '';
+      var isAndroid = /Android/i.test(userAgent);
+      var isIOS = /iPad|iPhone|iPod/.test(userAgent) ||
+        (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+
+      if (isAndroid) {
+        window.location.replace('https://play.google.com/store/apps/details?id=com.lightningmealplans');
+      } else if (isIOS) {
+        window.location.replace('https://apps.apple.com/us/app/lightningmealplans-ai-planner/id6790597906');
+      }
+    }());
+  </script>
+</head>
+<body>
+  <main class="section-padding" style="min-height: 100vh; display: flex; align-items: center; background: var(--color-background);">
+    <div class="container container-narrow text-center">
+      <img src="assets/LightningMealPlansLogo.png" alt="Lightning Meal Plans" style="width: 88px; height: 88px; border-radius: 20px; margin-bottom: 1.5rem;">
+      <span class="badge">Lightning Meal Plans</span>
+      <h1 class="hero-title" style="font-size: 2.5rem; margin: 0.75rem 0;">Choose your app store</h1>
+      <p class="hero-description" style="max-width: 580px; margin: 0 auto 2rem;">If you are on a phone, we will take you to the right store automatically. You can also choose below.</p>
+      <div class="store-badges" style="justify-content: center;">
+        <a href="https://play.google.com/store/apps/details?id=com.lightningmealplans" target="_blank" rel="noopener noreferrer" class="store-badge-link badge-play-store">
+          <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
+        </a>
+        <a href="https://apps.apple.com/us/app/lightningmealplans-ai-planner/id6790597906" target="_blank" rel="noopener noreferrer" class="store-badge-link badge-app-store">
+          <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store">
+        </a>
+      </div>
+      <p style="margin-top: 2rem;"><a href="/">Back to Lightning Meal Plans</a></p>
+    </div>
+  </main>
+</body>
+</html>
